@@ -25,7 +25,7 @@ jobs:
         with:
           mask-password: 'true'
 
-      # Step 4: Build, tag, and push Docker image to Amazon ECR
+      ### Step 4: Build, tag, and push Docker image to Amazon ECR
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
