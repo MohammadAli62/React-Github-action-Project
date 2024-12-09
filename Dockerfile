@@ -7,7 +7,7 @@ WORKDIR /app
 # Step 3: Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Step 4: Install dependencies
+# Step 4: Install dependenciess
 RUN npm install
 
 # Step 5: Update caniuse-lite
@@ -19,5 +19,5 @@ COPY . .
 # Step 7: Expose the application port (React's default is 3000)
 EXPOSE 3000
 
-# Step 8: Run the application
+# Step 8: Run the applicatione
 CMD ["npm", "start"]
